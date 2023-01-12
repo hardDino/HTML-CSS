@@ -1,0 +1,16 @@
+.hero {
+  padding: 220px 0px 360px 0px;
+  background-image: url('../img/bg/hero-bg.jpg');
+  @include bg-cover;
+  background-color: var(--color-gray);
+
+  &__content {
+    max-width: 590px;
+  }
+
+  &__btns {
+    .btn {
+      @include mr(15px)
+    }
+  }
+}
