@@ -1,1 +1,1 @@
-
+import './components/slider.js';
