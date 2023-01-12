@@ -89,3 +89,21 @@ document.querySelector('.portfolio-section__prev').addEventListener('click', () 
   nextActiveSlide.classList.add('slider-visible');
   previousActiveSlide.classList.add('slider-visible');
 });
+
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  slidesPerView: 1,
+  spaceBetween: gap,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
+  //ARIA
+  a11y: {
+    enabled: true,
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+    firstSlideMessage: 'This is the first slide',
+    lastSlideMessage: 'This is the last slide',
+  }
+});
