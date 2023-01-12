@@ -1,19 +1,8 @@
 .services-section {
-  padding: 245px 0 80px 0;
-  background-image: url('../img/bg/services-bg.jpg');
   @include bg-cover;
 
-  &__learn {
-    @include flex-all-center;
-  }
-
-  &__subtitle {
-    margin: 0 40px 0 0;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 150%;
-    color: var(--color-ebony);
-  }
+  padding: 245px 0 80px 0;
+  background-image: url('../img/bg/services-bg.jpg');
 
   &__list {
     margin: 0 0 80px 0;
@@ -23,7 +12,7 @@
 .services-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: var(--grid-gap);
 }
 
 .services-item {
