@@ -1,0 +1,71 @@
+.order {
+  padding: 87px 0;
+  background-image: url('../img/order-bg.svg');
+  background-position: bottom center;
+  background-size: cover;
+  background-color: var(--accent-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding: 0 0 0 60px;
+
+    @include middle-tablet {
+      @include flex-column;
+
+      grid-column: 12 span;
+      margin: 0 0 20px 0;
+      padding: 0;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 7 span;
+    padding: 0 60px 0 0;
+
+    @include middle-tablet {
+      grid-column: 12 span;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--light-color);
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--light-color);
+
+    @include mobile {
+      max-width: 250px;
+      font-size: 16px;
+    }
+  }
+}
