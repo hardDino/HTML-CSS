@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   background-color: #F4F5F7;
 
   &__content {
@@ -24,6 +24,11 @@
   &__container {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__image {
+    margin-bottom: -60px;
+    z-index: 10;
   }
 }
 
