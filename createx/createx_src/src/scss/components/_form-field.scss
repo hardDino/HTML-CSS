@@ -22,10 +22,26 @@
     &::placeholder {
       color: #9a9ca5;
     }
+
+    &--height {
+      padding: 10px 0 0 10px;
+      height: 66px;
+      resize: none;
+    }
   }
 
-  &--big {
+  &--wide {
     flex-grow: 1;
+
+    .form-field__input {
+      width: 100%;
+      resize: none;
+      padding: 10px 0 0 10px;
+    }
+  }
+
+  &--contacts {
+    width: 100%;
 
     .form-field__input {
       width: 100%;
