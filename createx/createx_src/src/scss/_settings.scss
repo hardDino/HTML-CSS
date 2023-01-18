@@ -154,6 +154,9 @@ a {
   }
 
   &--stroke {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+
     &-light {
       border-color: var(--light-color);
     }
