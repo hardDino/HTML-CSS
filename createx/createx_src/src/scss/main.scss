@@ -6,6 +6,7 @@
 
 // компоненты страницы
 @import "./components/slider-nav";
+@import "./components/akkordeon";
 
 // подключения компонентов страницы(большие компоненты)
 @import "./components/header";
@@ -23,6 +24,8 @@
 
 @import "./components/services-hero";
 @import "./components/services-content";
+
+@import "./components/services-inner-offer";
 
 // подключения компонентов страницы(маленькие компоненты)
 @import "./components/nav";
