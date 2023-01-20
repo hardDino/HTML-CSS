@@ -5,14 +5,24 @@
     margin: 0 0 60px 0;
   }
 
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--grid-gap);
-  }
-
   &__item {
+    position: relative;
     grid-column: 3 span;
+
+    &:not(:last-child) {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 75px;
+          top: 26px;
+          width: 209px;
+          height: 1px;
+          background-image: url('../img/services-inner/line.svg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no repeat;
+        }
+      }
   }
 
   &__number {
@@ -62,21 +72,6 @@
       height: 116px;
       background-color: rgba(255, 101, 80, .06);
       transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 75px;
-      top: 50%;
-      width: 209px;
-      height: 1px;
-      border: 1px dashed #d7dadd;
-      //background-image: url('../img/svg/line.svg');
-      // background-color: #d7dadd;
-      // background-position: center;
-      // background-size: cover;
-      // background-repeat: repeat;
     }
   }
 

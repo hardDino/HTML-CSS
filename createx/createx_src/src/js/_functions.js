@@ -21,7 +21,7 @@ console.log(mobileCheck())
 // import './functions/fix-fullheight';
 
 //Реализация аккордеона
-import { akkordeon1, akkordeon2 } from './functions/akkordeon';
+//import { akkordeon1, akkordeon2 } from './functions/akkordeon';
 
 // Реализация бургер-меню
 // import { burger } from './functions/burger';

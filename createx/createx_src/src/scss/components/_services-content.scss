@@ -24,10 +24,7 @@
   }
 
   &__item {
-    display: grid;
     align-items: center;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--grid-gap);
 
     &:not(:last-child) {
       margin: 0 0 116px 0;

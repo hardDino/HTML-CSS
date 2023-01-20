@@ -14,7 +14,7 @@ class Akkordeon {
   }
 
   event() {
-    console.log('event!');
+    console.log('event!')
 
     if(this.akkordeon) {
       this.akkordeon.addEventListener('click', (e) => {
@@ -37,7 +37,7 @@ class Akkordeon {
     this.content.style.maxHeight = this.content.scrollHeight + 'px';
     this.options.isOpen(this);
   }
-  
+
   close() {
     this.akkordeon.classList.remove('is-open');
     this.control.setAttribute('aria-expanded', false);
@@ -47,5 +47,8 @@ class Akkordeon {
   }
 }
 
-export const akkordeon1 = new Akkordeon('.akkordeon-1', {speed: 700});
-export const akkordeon2 = new Akkordeon('.akkordeon-2', {speed: 700});
+if (document.querySelector('.offer')) {
+  const akkordeon1 = new Akkordeon('.akkordeon-1', { speed: 700 });
+  const akkordeon2 = new Akkordeon('.akkordeon-2', { speed: 700 });
+}
+
