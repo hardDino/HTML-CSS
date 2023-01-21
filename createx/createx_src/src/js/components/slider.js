@@ -6,6 +6,92 @@ const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
 
 const portSlider = document.querySelector('.portfolio-section__items')
+const servPortSlider = document.querySelector('.services-portfolio__items')
+
+if (servPortSlider) {
+  const portfolioSlider = new Swiper(servPortSlider, {
+    slidesPerView: 3,
+    spaceBetween: gap,
+    loop: true,
+    centeredSlides: true,
+    on: {
+      init: function () {
+
+        const activeSlide = servPortSlider.querySelector('.swiper-slide-active');
+
+        const nextActiveSlide = activeSlide.nextElementSibling;
+
+        const previousActiveSlide = activeSlide.previousElementSibling;
+
+        activeSlide.classList.add('slider-visible');
+        nextActiveSlide.classList.add('slider-visible');
+        previousActiveSlide.classList.add('slider-visible');
+      }
+    },
+    navigation: {
+      nextEl: '.services-portfolio__next',
+      prevEl: '.services-portfolio__prev',
+    },
+    //ARIA
+    a11y: {
+      enabled: true,
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+      firstSlideMessage: 'This is the first slide',
+      lastSlideMessage: 'This is the last slide',
+    }
+  });
+
+  // document.querySelector('.services-portfolio__prev').addEventListener('click', () => {
+
+  //   const activeSlide = portSlider.querySelector('.swiper-slide-next');
+
+  //   document.querySelectorAll('.services-portfolio__items .swiper-slide').forEach(el => {
+  //     el.classList.remove('slider-visible');
+  //   })
+
+  //   if (activeSlide.previousElementSibling) {
+  //     const nextActiveSlide = activeSlide.previousElementSibling;
+  //     activeSlide.classList.add('slider-visible');
+  //     nextActiveSlide.classList.add('slider-visible');
+  //     previousSlide.nextElementSibling.classList.add('slider-visible');
+  //   }
+  // });
+
+  document.querySelector('.services-portfolio__next').addEventListener('click', () => {
+
+    const activeSlide = servPortSlider.querySelector('.swiper-slide-active');
+
+    const nextActiveSlide = activeSlide.nextElementSibling;
+
+    const previousActiveSlide = activeSlide.previousElementSibling;
+
+    document.querySelectorAll('.services-portfolio__items .swiper-slide').forEach(el => {
+      el.classList.remove('slider-visible');
+    })
+
+    activeSlide.classList.add('slider-visible');
+    nextActiveSlide.classList.add('slider-visible');
+    previousActiveSlide.classList.add('slider-visible');
+  });
+
+  document.querySelector('.services-portfolio__prev').addEventListener('click', () => {
+
+    const activeSlide = servPortSlider.querySelector('.swiper-slide-active');
+
+    const nextActiveSlide = activeSlide.previousElementSibling;
+    
+    const previousActiveSlide = activeSlide.nextElementSibling;
+
+    document.querySelectorAll('.services-portfolio__items .swiper-slide').forEach(el => {
+      el.classList.remove('slider-visible');
+    })
+
+    activeSlide.classList.add('slider-visible');
+    nextActiveSlide.classList.add('slider-visible');
+    previousActiveSlide.classList.add('slider-visible');
+  });
+}
 
 if (portSlider) {
   const portfolioSlider = new Swiper(portSlider, {
