@@ -15,7 +15,7 @@
 @import "./components/about-section";
 @import "./components/mission";
 @import "./components/services-section";
-@import "./components/portfolio";
+@import "./components/portfolio-section";
 @import "./components/partners";
 @import "./components/testimonials";
 @import "./components/facts";
@@ -31,6 +31,8 @@
 @import "./components/services-inner-benefits";
 @import "./components/services-inner-portfolio";
 @import "./components/services-inner-pricing";
+
+@import "./components/portfolio-projects";
 
 // подключения компонентов страницы(маленькие компоненты)
 @import "./components/nav";

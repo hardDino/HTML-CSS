@@ -14,3 +14,44 @@
     }
   }
 }
+
+.hero-secondary {
+  background-repeat: no-repeat;
+  background-color: var(--color-athens);
+
+  &__breadcrumbs {
+      margin: 0 0 40px 0;
+    }
+
+  &__title {
+      margin: 0 0 24px 0;
+      max-width: 600px;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 130%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--color-ebony);
+    }
+
+  &__descr {
+    margin: 0;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-storm);
+  }
+
+  &--services {
+    background-image: url('../img/services-page/services-bg.png');
+  }
+
+  &--services-inner {
+    background-image: url('../img/services-inner/services-inner-bg.png');
+  }
+
+  &--portfolio {
+    background-image: url('../img/portfolio/portfolio-bg.png');
+  }
+}

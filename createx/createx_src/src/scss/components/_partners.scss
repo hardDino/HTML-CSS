@@ -8,4 +8,9 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
   }
+
+  &--portfolio {
+    padding: 180px 0px 110px;
+    background-color: var(--ligth-color );
+  }
 }
