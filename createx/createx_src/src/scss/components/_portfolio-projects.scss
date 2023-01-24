@@ -67,10 +67,6 @@ padding: 0 0 100px;
     display: none;
     grid-column: 4 span;
 
-    &:nth-child(n + 10) {
-      display: none;
-    }
-
     &--visible {
       display: block;
     }

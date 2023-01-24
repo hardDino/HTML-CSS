@@ -80,7 +80,7 @@ if (servPortSlider) {
     const activeSlide = servPortSlider.querySelector('.swiper-slide-active');
 
     const nextActiveSlide = activeSlide.previousElementSibling;
-    
+
     const previousActiveSlide = activeSlide.nextElementSibling;
 
     document.querySelectorAll('.services-portfolio__items .swiper-slide').forEach(el => {
@@ -197,3 +197,26 @@ const testimonialsSlider = new Swiper('.testimonials__items', {
     lastSlideMessage: 'This is the last slide',
   }
 });
+
+const portInnerSlider = document.querySelector('.portfolio-inner-slider');
+
+if (portInnerSlider) {
+    const portfolioInnerSlider = new Swiper('.portfolio-inner-slider-nav', {
+      spaceBetween: 20,
+      slidesPerView: 10,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    const portfolioInnerSliderNav = new Swiper(portInnerSlider, {
+      spaceBetween: 20,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: portfolioInnerSlider,
+      },
+    });
+}
+

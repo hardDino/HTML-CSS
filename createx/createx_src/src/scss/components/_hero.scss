@@ -54,4 +54,17 @@
   &--portfolio {
     background-image: url('../img/portfolio/portfolio-bg.png');
   }
+
+  &--portfolio-inner {
+    background-image: url('../img/portfolio-inner/portfolio-inner-bg.png');
+    background-color: var(--light-color);
+
+    .hero-secondary__title {
+      margin: 0 0 60px 0;
+      font-size: 64px;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+  }
 }

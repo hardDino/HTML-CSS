@@ -2,4 +2,8 @@
   padding: 153px 0 80px 0;
   min-height: 600px;
   background-position: right -8px top;
+
+  &.hero-secondary--portfolio-inner {
+    background-position: right -8px top 48px;
+  }
 }
