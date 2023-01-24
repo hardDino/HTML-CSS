@@ -64,9 +64,18 @@ padding: 0 0 100px;
 
 .portfolio-tabs {
   &__item {
+    display: none;
     grid-column: 4 span;
 
+    &:nth-child(n + 10) {
+      display: none;
+    }
+
     &--visible {
+      display: block;
+    }
+
+    &--visible-more {
       display: block !important;
     }
   }
