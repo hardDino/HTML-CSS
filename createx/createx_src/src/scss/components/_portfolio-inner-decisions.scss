@@ -1,0 +1,46 @@
+.portfolio-inner-decisions {
+  padding: 80px 0;
+  background-color: var(--color-athens);
+
+  &__left {
+    grid-column: 5 span;
+
+    img {
+      margin: 0 0 -145px 0;
+    }
+  }
+
+  &__right {
+    padding: 0 0 0 105px;
+    grid-column: 7 span;
+  }
+
+  &__title {
+    margin: 0 0 60px 0;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 0 0 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray);
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/svg/decision-check.svg");
+
+        @include bg-cover;
+      }
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+}

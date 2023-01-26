@@ -1,6 +1,29 @@
-.portfolio-inner-slider {
+.portfolio-inner {
   overflow: hidden;
-  margin: 0 0 20px 0;
+
+  &__prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    z-index: 5;
+    background-color: rgba(#fff, .5);
+    transform: translateY(-50%);
+  }
+
+  &__next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    z-index: 5;
+    background-color: rgba(#fff, .5);
+    transform: translateY(-50%);
+  }
+
+
+  &-slider {
+    position: relative;
+    margin: 0 0 20px 0;
+  }
 
   .swiper-slide img{
     display: block;
@@ -11,6 +34,3 @@
   }
 }
 
-.portfolio-inner-slider-nav {
-  overflow: hidden;
-}

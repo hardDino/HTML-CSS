@@ -56,7 +56,9 @@
   }
 
   &--portfolio-inner {
+    padding: 150px 0;
     background-image: url('../img/portfolio-inner/portfolio-inner-bg.png');
+    background-position: right -8px top 48px;
     background-color: var(--light-color);
 
     .hero-secondary__title {

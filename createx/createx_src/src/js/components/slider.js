@@ -198,24 +198,36 @@ const testimonialsSlider = new Swiper('.testimonials__items', {
   }
 });
 
+// const portInnerSlider = document.querySelector('.portfolio-inner-slider');
+
+// if (portInnerSlider) {
+//     const portfolioInnerSlider = new Swiper('.portfolio-inner-nav', {
+//       spaceBetween: 20,
+//       slidesPerView: 10,
+//       freeMode: true,
+//       watchSlidesProgress: true,
+//     });
+//     const portfolioInnerNav = new Swiper(portInnerSlider, {
+//       spaceBetween: 20,
+//       slidesPerView: 1,
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
+//       thumbs: {
+//         swiper: portfolioInnerSlider,
+//       },
+//     });
+// }
 const portInnerSlider = document.querySelector('.portfolio-inner-slider');
 
 if (portInnerSlider) {
-    const portfolioInnerSlider = new Swiper('.portfolio-inner-slider-nav', {
-      spaceBetween: 20,
-      slidesPerView: 10,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    const portfolioInnerSliderNav = new Swiper(portInnerSlider, {
+    const portfolioInnerSlider = new Swiper(portInnerSlider, {
       spaceBetween: 20,
       slidesPerView: 1,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: portfolioInnerSlider,
+        nextEl: ".portfolio-inner__next",
+        prevEl: ".portfolio-inner__prev",
       },
     });
 }
