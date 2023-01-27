@@ -1,0 +1,121 @@
+.about-achieve {
+  padding-bottom: 120px;
+  background-image: url('../img/about/about-achieve-bg.png');
+  background-position: right -8px bottom -527px;
+  background-repeat: no-repeat;
+  background-color: var(--light-color);
+
+  &__list {
+    margin: 0 0 265px 0;
+  }
+
+  &__item {
+    @include flex-column-center;
+
+    grid-column: 3 span;
+  }
+
+  &__icon {
+    margin: 0 0 20px 0;
+    width: 48px;
+    height: 48px;
+    fill: #9A9CA5;
+  }
+
+  &__value {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--color-primary);
+
+    sup {
+      font-size: 27px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    position: relative;
+    left: -30px;
+    top: -130px;
+    z-index: 10;
+    flex-shrink: 0;
+    border-radius: 4px;
+    padding: 80px 82px 58px 82px;
+    width: 735px;
+    box-shadow: var(--main-shadow);
+    background: var(--light-color);
+  }
+}
+
+.quote {
+  margin: 0;
+
+  &__content {
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 10px 13px 10px 53px;
+
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+
+      &:not(:last-child) {
+        margin: 0 0 30px 0;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 10px;
+      width: 28px;
+      height: 20px;
+      background-image: url('../img/about/braces.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__footer {
+    padding: 20px 0 20px 53px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-storm);
+    background-image: url('../img/svg/signature.svg');
+    background-position: right 24px center;
+    background-size: 100px 68px;
+    background-repeat: no-repeat;
+
+    span {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__author {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-ebony);
+  }
+}
