@@ -12,7 +12,7 @@
         position: absolute;
         right: -15px;
         top: 0;
-        color: #9a9ca5;
+        color: var(--color-mana);
       }
     }
   }
@@ -24,7 +24,7 @@
     color: var(--color-gray);
 
     &:not([href]) {
-      color: #9a9ca5;
+      color: var(--color-mana);
     }
   }
 }

@@ -20,7 +20,7 @@
     line-height: 150%;
 
     &::placeholder {
-      color: #9a9ca5;
+      color: var(--color-mana);
     }
 
     &--height {

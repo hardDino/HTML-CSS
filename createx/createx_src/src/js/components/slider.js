@@ -232,3 +232,43 @@ if (portInnerSlider) {
     });
 }
 
+const historySlider = document.querySelector('.history-slider');
+
+if (historySlider) {
+  const aboutSlider = new Swiper(historySlider, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".about-history__next",
+      prevEl: ".about-history__prev",
+    },
+  });
+
+  aboutSlider.on('slideChange', function () {
+    console.log(aboutSlider.realIndex);
+
+    historyBtns.forEach(el => {
+      el.classList.remove('history-nav__btn--active')
+    })
+
+    document.querySelector(`.history-nav__btn[data-index="${aboutSlider.realIndex}"]`).classList.add('history-nav__btn--active')
+  });
+
+  const historyBtns = document.querySelectorAll('.history-nav__btn');
+
+  historyBtns.forEach((el, idx)  => {
+    el.setAttribute('data-index', idx);
+
+    el.addEventListener('click', (e) => {
+      const index = e.currentTarget.dataset.index;
+
+      historyBtns.forEach(el => {
+        el.classList.remove('history-nav__btn--active')
+      })
+
+      e.currentTarget.classList.add('history-nav__btn--active')
+
+      aboutSlider.slideTo(index);
+    });
+  });
+}
