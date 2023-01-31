@@ -73,4 +73,10 @@
   &--about {
     background-image: url('../img/about/about-bg.png');
   }
+
+  &--positions {
+    background-image: url('../img/positions/positions-bg.png');
+    background-position: right -8px top 95px !important;
+    background-color: var(--color-athens);
+  }
 }

@@ -156,6 +156,7 @@ a {
   &--stroke {
     color: var(--color-primary);
     border-color: var(--color-primary);
+    background-color: var(--light-color);
 
     &-light {
       border-color: var(--light-color);
