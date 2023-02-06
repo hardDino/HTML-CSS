@@ -1,0 +1,117 @@
+.post-article {
+  &__cover {
+    display: block;
+    margin: -79px 0 0 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 80px 15px 0;
+    max-width: 839px;
+  }
+
+  &__content {
+    padding: 0 0 60px 0;
+
+    * {
+      margin-bottom: 28px;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-gray);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin: 0 0 25px 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+    }
+
+    h3 {
+      margin: 0 0 25px 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--color-ebony);
+    }
+
+    p {
+      margin: 0 0 28px 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-gray);
+    }
+
+    blockquote {
+      position: relative;
+      margin: 0 0 28px 0;
+      padding: 20px 10px 20px 58px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 28px;
+        height: 20px;
+        background-image: url('../img/about/braces.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 25px 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding: 0 32px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 16px;
+          height: 16px;
+          background-image: url('../img/post/check-post.svg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &:not(:last-child) {
+          margin: 0 0 4px 0;
+        }
+      }
+    }
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-ebony);
+
+    span {
+      margin: 0 10px 0 0;
+    }
+  }
+}
