@@ -53,6 +53,8 @@
 @import "./components/post-article";
 @import "./components/post-comments";
 
+@import "./components/contacts-info";
+
 
 // подключения компонентов страницы(маленькие компоненты)
 @import "./components/nav";
@@ -60,6 +62,7 @@
 @import "./components/video-block";
 @import "./components/form-field";
 @import "./components/post-form";
+@import "./components/contacts-form";
 @import "./components/learn-more";
 @import "./components/breadcrumbs";
 @import "./components/portfolio-item";
