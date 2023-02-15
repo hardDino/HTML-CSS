@@ -123,6 +123,20 @@
 
     a {
       color: inherit;
+      transition: color .3s ease-in-out;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &:active {
+        color: var(--color-active);
+      }
     }
 
     &:not(:last-child) {
@@ -156,5 +170,19 @@
     font-size: 16px;
     line-height: 160%;
     color: inherit;
+    transition: color .3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 }

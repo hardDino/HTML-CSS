@@ -58,6 +58,11 @@
     line-height: 150%;
     color: var(--color-mana);
     transform: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+
+    &--active {
+      color: var(--color-primary);
+    }
 
     &::before {
       content: "";
@@ -80,8 +85,18 @@
       background-color: currentColor;
     }
 
-    &--active {
+    &:focus {
+      color: var(--color-primary);
+      outline: none;
+    }
+
+    &:hover {
       color: var(--color-primary);
     }
+
+    &:active {
+      color: var(--color-active);
+    }
+
   }
 }

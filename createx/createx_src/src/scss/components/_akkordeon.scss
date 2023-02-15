@@ -15,6 +15,11 @@
     text-align: left;
     background-color: transparent;
     cursor: pointer;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
   }
 
   &__title {

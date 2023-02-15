@@ -17,6 +17,13 @@
 
   &--portfolio {
     padding: 180px 0px 110px;
-    background-color: var(--ligth-color );
+    background-color: var(--light-color );
+  }
+
+  &__link {
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
   }
 }

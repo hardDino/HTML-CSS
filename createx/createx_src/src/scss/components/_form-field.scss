@@ -18,6 +18,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+    transition: background-color .3s ease-in-out;
 
     &::placeholder {
       color: var(--color-mana);
@@ -27,6 +28,19 @@
       padding: 10px 0 0 10px;
       height: 66px;
       resize: none;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--light-color);
+    }
+
+    &:active {
+      background-color: var(--light-color);
     }
   }
 

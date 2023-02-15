@@ -55,6 +55,20 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--color-primary);
+    transition: color .3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-active);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 
   &__elem {
@@ -70,6 +84,7 @@
 
   &__value {
     color: var(--color-ebony);
+    transition: color .3s ease-in-out;
   }
 
   &__soc {
@@ -92,6 +107,33 @@
       svg {
         fill: var(--color-gray);
       }
+
+      &:hover {
+        svg {
+          fill: var(--color-primary);
+        }
+      }
+
+      &:active {
+        svg {
+          fill: var(--color-active);
+        }
+      }
     }
   }
+}
+
+a.contacts-info__value {
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
 }

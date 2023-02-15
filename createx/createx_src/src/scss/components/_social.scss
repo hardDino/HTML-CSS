@@ -19,6 +19,24 @@
       height: 100%;
       fill: rgba(255, 255, 255, .6);
       object-fit: cover;
+      transition: fill .3s ease-in-out;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+    
+    &:hover {
+      svg {
+        fill: var(--color-primary);
+      }
+    }
+
+    &:active {
+      svg {
+        fill: var(--color-active);
+      }
     }
   }
 }
